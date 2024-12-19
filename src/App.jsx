@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Editor from "./components/Editor";
 import Preview from "./components/Preview";
 
 const App = () => {
+  const [markdown, setMarkdown] = useState("");
+
   return (
     <div className="flex flex-col h-screen">
       {/* Header */}
@@ -14,12 +16,12 @@ const App = () => {
       <main className="flex-grow flex flex-col md:flex-row">
         {/* Editor */}
         <div className="flex-1 border-r border-gray-300 p-4">
-          <Editor />
+          <Editor markdown={markdown} setMarkdown={setMarkdown} />
         </div>
 
         {/* Preview */}
         <div className="flex-1 p-4">
-          <Preview />
+          <Preview markdown={markdown} />
         </div>
       </main>
 
