@@ -18,7 +18,7 @@
 
 ## Demo 🚀
 
-Check out a live version of MDlens [here](https://your-live-demo-link.com).
+Check out a live version of MDlens [here](https://md-lens.vercel.app/).
 
 ---
 
