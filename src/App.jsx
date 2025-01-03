@@ -10,7 +10,7 @@ const App = () => {
       {/* Header */}
       <header className="navbar bg-base-100 shadow-md">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">
+          <a href="" className="btn btn-ghost text-xl">
             MarkdownLens<sup class="-ml-0.4em">beta</sup>
           </a>
         </div>
@@ -45,14 +45,6 @@ const App = () => {
           <Preview markdown={markdown} />
         </div>
       </main>
-
-      <footer className="footer footer-center bg-base-300 text-base-content p-4">
-        <aside>
-          <p className="italic opacity-75 font-medium">
-            &copy; 2024. All rights reserved
-          </p>
-        </aside>
-      </footer>
     </div>
   );
 };
