@@ -1,6 +1,6 @@
 # MDlens: A Real-Time Markdown Viewer ✨
 
-![MDlens Banner](public\mdlens_preview.png)
+![MDlens Banner](public/mdlens_preview.png)
 
 **MDlens** is a modern markdown editor and previewer built with **React**, **Tailwind CSS**, and **Marked.js**. With its simplistic UI, users can seamlessly write, edit, and preview markdown side-by-side, without distractions. MDlens empowers developers, writers, and content creators with tools for clean and efficient markdown formatting.
 
