@@ -7,29 +7,35 @@ const Editor = ({ markdown, setMarkdown }) => {
   const handleMarkdownWrap = (prefix, suffix = "") => {
     const textarea = document.getElementById("markdown-editor");
     const { selectionStart, selectionEnd, value } = textarea;
-  
+
     // Check if there is a selection or just a cursor position
     const hasSelection = selectionStart !== selectionEnd;
-  
+
     const before = value.substring(0, selectionStart);
     const selected = value.substring(selectionStart, selectionEnd);
     const after = value.substring(selectionEnd);
-  
+
     let newMarkdown;
     let newSelectionStart, newSelectionEnd;
-  
+
     if (hasSelection) {
       // Detect if the current style is already applied
       const styledSelectionStart = Math.max(0, selectionStart - prefix.length);
-      const styledSelectionEnd = Math.min(value.length, selectionEnd + suffix.length);
-  
+      const styledSelectionEnd = Math.min(
+        value.length,
+        selectionEnd + suffix.length
+      );
+
       const isAlreadyStyled =
         value.substring(styledSelectionStart, selectionStart) === prefix &&
         value.substring(selectionEnd, styledSelectionEnd) === suffix;
-  
+
       if (isAlreadyStyled) {
         // Remove the style
-        newMarkdown = `${before.substring(0, styledSelectionStart)}${selected}${after.substring(styledSelectionEnd)}`;
+        newMarkdown = `${before.substring(
+          0,
+          styledSelectionStart
+        )}${selected}${after.substring(styledSelectionEnd)}`;
         newSelectionStart = styledSelectionStart;
         newSelectionEnd = styledSelectionStart + selected.length;
       } else {
@@ -41,30 +47,39 @@ const Editor = ({ markdown, setMarkdown }) => {
     } else {
       // No selection: auto-detect the word around the cursor
       const leftBoundary = value.lastIndexOf(" ", selectionStart - 1) + 1;
-      const rightBoundary = value.indexOf(" ", selectionEnd) === -1 ? value.length : value.indexOf(" ", selectionEnd);
-  
+      const rightBoundary =
+        value.indexOf(" ", selectionEnd) === -1
+          ? value.length
+          : value.indexOf(" ", selectionEnd);
+
       const word = value.substring(leftBoundary, rightBoundary);
       const isAlreadyStyled =
-        value.substring(leftBoundary - prefix.length, leftBoundary) === prefix &&
-        value.substring(rightBoundary, rightBoundary + suffix.length) === suffix;
-  
+        value.substring(leftBoundary - prefix.length, leftBoundary) ===
+          prefix &&
+        value.substring(rightBoundary, rightBoundary + suffix.length) ===
+          suffix;
+
       if (isAlreadyStyled) {
         // Remove style from the word
-        newMarkdown = `${value.substring(0, leftBoundary - prefix.length)}${word}${value.substring(
-          rightBoundary + suffix.length
-        )}`;
+        newMarkdown = `${value.substring(
+          0,
+          leftBoundary - prefix.length
+        )}${word}${value.substring(rightBoundary + suffix.length)}`;
         newSelectionStart = leftBoundary - prefix.length;
         newSelectionEnd = leftBoundary - prefix.length + word.length;
       } else {
         // Add style to the word
-        newMarkdown = `${value.substring(0, leftBoundary)}${prefix}${word}${suffix}${value.substring(rightBoundary)}`;
+        newMarkdown = `${value.substring(
+          0,
+          leftBoundary
+        )}${prefix}${word}${suffix}${value.substring(rightBoundary)}`;
         newSelectionStart = leftBoundary + prefix.length;
         newSelectionEnd = newSelectionStart + word.length;
       }
     }
-  
+
     setMarkdown(newMarkdown);
-  
+
     // Restore cursor/selection focus
     setTimeout(() => {
       textarea.selectionStart = newSelectionStart;
@@ -72,8 +87,6 @@ const Editor = ({ markdown, setMarkdown }) => {
       textarea.focus();
     }, 0);
   };
-  
-  
 
   const toggleDropdown = () => {
     setIsDropdownOpen((prev) => !prev);

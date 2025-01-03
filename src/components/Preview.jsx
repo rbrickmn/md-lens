@@ -40,7 +40,7 @@ const Preview = ({ markdown }) => {
       {showAlert && (
         <div
           role="alert"
-          className="alert alert-success fixed bottom-4 right-4 flex items-center transition-transform duration-300 ease-out transform translate-y-0 opacity-100"
+          className="alert alert-success absolute bottom-4 right-4 w-80 flex items-center transition-transform duration-300 ease-out transform translate-y-0 opacity-100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

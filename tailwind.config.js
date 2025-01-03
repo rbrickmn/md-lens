@@ -7,6 +7,9 @@ export default {
         "0.1em": "0.1em",
         "0.4em": "0.4em",
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],
