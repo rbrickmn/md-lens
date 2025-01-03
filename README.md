@@ -1,8 +1,8 @@
 # MDlens: A Real-Time Markdown Viewer ✨
 
-![MDlens Banner](https://via.placeholder.com/1000x300?text=MDlens+Markdown+Viewer) <!-- Replace with your project banner -->
+![MDlens Banner](public\mdlens_preview.png)
 
-**MDlens** is a modern markdown editor and previewer built with **React**, **Tailwind CSS**, and **Marked.js**. With its intuitive UI, users can seamlessly write, edit, and preview markdown side-by-side, without distractions. MDlens empowers developers, writers, and content creators with tools for clean and efficient markdown formatting.
+**MDlens** is a modern markdown editor and previewer built with **React**, **Tailwind CSS**, and **Marked.js**. With its simplistic UI, users can seamlessly write, edit, and preview markdown side-by-side, without distractions. MDlens empowers developers, writers, and content creators with tools for clean and efficient markdown formatting.
 
 ---
 
@@ -11,7 +11,7 @@
 - **Live Markdown Preview**: See changes in real time as you type.
 - **Responsive Design**: Adapts seamlessly to any screen size, offering a side-by-side layout for desktops and a stacked view for mobile.
 - **Formatting Toolbar**: Bold, italicize, or create headers effortlessly using a user-friendly toolbar.
-- **Customizable UI**: Tailwind CSS and DaisyUI ensure a modern, accessible design.
+- **Simple UI**: Tailwind CSS and DaisyUI offer a modern, accessible design.
 - **Markdown Rendering**: Powered by Marked.js, supporting a wide range of markdown syntax.
 
 ---
@@ -66,9 +66,9 @@ Follow these instructions to set up MDlens on your local machine for development
 
 ## Usage 🖋️
 
-1. Write Markdown: Use the editor on the left to type raw markdown.
-2. Preview Changes: Watch your markdown render live on the right panel.
-3. Apply formatting: Highlight text and use the toolbar for bold, italics, headers, and more.
+1. **Write Markdown**: Use the editor on the left to type raw markdown.
+2. **Preview Changes**: Watch your markdown render live on the right panel.
+3. **Apply formatting**: Highlight text and use the toolbar for bold, italics, headers, and more.
 
 ## Contributing 🤝
 
@@ -88,8 +88,6 @@ We welcome contributions to improve MDlens! Follow these steps to contribute:
    git push origin feature-name
    ```
 5. Open a Pull Request on GitHub.
-
-Please ensure your contributions adhere to our [Code of Conduct](#code-of-conduct) and follow the guidelines in the CONTRIBUTING.md file.
 
 ## License 📄
 
