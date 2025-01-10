@@ -15,8 +15,15 @@ const App = () => {
           </a>
         </div>
         <div className="flex-none">
-          <div className="tooltip tooltip-bottom align-middle" data-tip="GitHub">
-            <a href="https://github.com/rbrickmn/md-lens" target="blank" className="btn btn-square btn-ghost align-middle">
+          <div
+            className="tooltip tooltip-bottom align-middle"
+            data-tip="GitHub"
+          >
+            <a
+              href="https://github.com/rbrickmn/md-lens"
+              target="blank"
+              className="btn btn-square btn-ghost align-middle"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
