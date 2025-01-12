@@ -238,7 +238,7 @@ const Editor = ({ markdown, setMarkdown }) => {
       {/* Textarea */}
       <textarea
         id="markdown-editor"
-        className="flex-grow bg-base-100 p-4 resize-none rounded-b-lg outline-none font-mono"
+        className="flex-grow bg-base-100 border border-base-300 border-t-0 p-4 resize-none rounded-b-lg outline-none font-mono"
         placeholder="Type your markdown here..."
         value={markdown}
         onChange={(e) => setMarkdown(e.target.value)}
