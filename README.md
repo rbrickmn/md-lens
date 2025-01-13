@@ -99,7 +99,7 @@ Special thanks to the following technologies and libraries that made this projec
 
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Marked.js](https://marked.js.org/)
 - [DaisyUI](https://daisyui.com/)
+- [Marked.js](https://marked.js.org/)
 
 Feel free to reach out or create an issue for any questions or suggestions. We hope you enjoy using **MDlens** as much as we enjoyed building it! 😊
