@@ -11,7 +11,7 @@
 - **Live Markdown Preview**: See changes in real time as you type.
 - **Responsive Design**: Adapts seamlessly to any screen size, offering a side-by-side layout for desktops and a stacked view for mobile.
 - **Formatting Toolbar**: Bold, italicize, or create headers effortlessly using a user-friendly toolbar.
-- **Simple UI**: Tailwind CSS and DaisyUI offer a modern, accessible design.
+- **Simplistic UI**: Tailwind CSS and DaisyUI offer a modern, accessible design.
 - **Markdown Rendering**: Powered by Marked.js, supporting a wide range of markdown syntax.
 
 ---
